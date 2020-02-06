@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { css } from "@emotion/core"
+import Navegacion from "./nav"
 
 const Header = () => {
   return (
@@ -24,6 +25,7 @@ const Header = () => {
         `}
       >
         <h1>Hotel Gatsby</h1>
+        <Navegacion />
       </div>
     </header>
   )
