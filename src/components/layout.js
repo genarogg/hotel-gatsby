@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "../components/header"
 import Helmet from "react-helmet"
+import "../normalize.min.css"
 
 import { Global, css } from "@emotion/core"
 
@@ -27,7 +28,7 @@ const Layout = props => {
 
           h1,
           h2 {
-            font-family: "Roboto", serif;
+            font-family: "Lato", "Roboto", serif;
           }
           h3 {
             font-family: "Lato", "PT Sans", sans-serif;
@@ -42,7 +43,7 @@ const Layout = props => {
       />
       <Helmet>
         <title>Gatsby Hotel</title>
-        <link rel="stylesheet" href="../normalize.min.css" />
+        
         <link
           href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,700&display=swap"
           rel="stylesheet"
