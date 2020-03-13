@@ -4,7 +4,21 @@ import Image from 'gatsby-image';
 import { css } from '@emotion/core';
 import Layout from '../components/layout';
 
-
+export const query = graphql`
+    query($slug: String!) {
+        allDatoCmsHabitacion(filter: { slug: { eq: $slug } }) {
+            nodes {
+                    titulo
+                    contenido
+                    imagen {
+                    fluid(maxWidth:1200) {
+                        ...GatsbyDatoCmsFluid
+                    }
+                }
+            }
+        }
+    }
+`
 
 const HabitacionTemplate = ({data: { allDatoCmsHabitacion: { nodes } }}) => {
 
