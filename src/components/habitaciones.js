@@ -12,7 +12,24 @@ const HabitacionTemplate = ({data: { allDatoCmsHabitacion: { nodes } }}) => {
 
     return ( 
         <Layout>
-            
+            <main
+                css={css`
+                    margin: 0 auto;
+                    max-width: 1200px;
+                    width: 95%;
+                `}
+            >
+                <h1
+                    css={css`
+                        text-align: center;
+                        margin-top: 4rem;
+                    `}
+                >{titulo}</h1>
+                <p>{contenido}</p>
+                <Image 
+                    fluid={imagen.fluid}
+                />
+            </main>
         </Layout>
      );
 }
