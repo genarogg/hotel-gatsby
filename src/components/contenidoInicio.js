@@ -10,16 +10,21 @@ const ContenidoInicio = () => {
           contenido
           imagen {
             fluid {
-              srcSet
+              ...GatsbyDatoCmsFluid
             }
           }
         }
       }
     }
   `)
+
+  const { titulo, contenido, imgen } = informacion.allDatoCmsPagina.nodes[0]
   return (
     <>
-      <h2>Titulo de la pagina</h2>
+      <h2>titulo</h2>
+      <div>
+        <p>{contenido}</p>
+      </div>
     </>
   )
 }
