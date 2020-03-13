@@ -24,7 +24,26 @@ const ContenidoNosotros = () => {
       }
     `);
 
-    
+    const { titulo, contenido, imagen } = resultado.allDatoCmsPagina.nodes[0];
+
+    return ( 
+        <>
+            <h2
+                css={css`
+                    margin-top: 4rem;
+                    text-align: center;
+                    font-size: 4rem;
+                `}
+            >{titulo}</h2>
+            <Contenido>
+                <p> {contenido} </p>
+                <Image 
+                    fluid={imagen.fluid}
+                />
+            </Contenido>
+
+        </>
+     );
 }
  
 export default ContenidoNosotros;
