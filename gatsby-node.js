@@ -11,5 +11,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     // console.log(resultado.data.allDatoCmsHabitacion.nodes);
 
+    if(resultado.errors) {
+        reporter.panic('No hubo resultados ', resultado.errors);
+    }
 
 }
