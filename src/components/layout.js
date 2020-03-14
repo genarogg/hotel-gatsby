@@ -12,12 +12,18 @@ const Layout = props => {
         styles={css`
           html {
             font-size: 62.5%;
+            box-sizing: border-box;
           }
-
+          *,
+          *:before,
+          *:after {
+            box-sizing: inherit;
+          }
           body {
-            font-size: 16px;
-            font-size: 1.6rem;
+            font-size: 18px;
+            font-size: 1.8rem;
             line-height: 1.5;
+            font-family: "PT Sans", sans-serif;
           }
           h1,
           h2,
@@ -43,7 +49,7 @@ const Layout = props => {
       />
       <Helmet>
         <title>Gatsby Hotel</title>
-        
+
         <link
           href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,700&display=swap"
           rel="stylesheet"
