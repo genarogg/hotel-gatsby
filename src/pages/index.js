@@ -7,6 +7,7 @@ import ContenidoInicio from "../components/ContenidoInicio"
 import HabitacionPreview from "../components/habitacionPreview"
 import useHabitaciones from "../hooks/use-habitaciones"
 
+
 const ListadoHabitaciones = styled.ul`
   max-width: 1200px;
   width: 95%;

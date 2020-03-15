@@ -4,6 +4,7 @@ import { Global, css } from "@emotion/core"
 import Header from "./header"
 import Footer from "./footer"
 import useSeo from "../hooks/use-seo"
+import "../style.css"
 
 const Layout = props => {
   const seo = useSeo()
@@ -62,6 +63,7 @@ const Layout = props => {
           href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,700&display=swap"
           rel="stylesheet"
         />
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon"></link>
       </Helmet>
 
       <Header />
